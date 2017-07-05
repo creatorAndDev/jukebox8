@@ -24,7 +24,7 @@ public class Jukebox8 {
 		
 		TreeSet<Song> songSet2 = new TreeSet<Song>();
 		songSet2.addAll(songList);
-		System.out.println("Без дубликатов с сортировкой TreeSet: " + songSet2);
+		System.out.println("Cортировкой TreeSet без дубликатов: " + songSet2);
 	}
 	void getSongs(){
 		try{
