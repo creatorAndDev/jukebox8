@@ -17,9 +17,14 @@ public class Jukebox8 {
 		System.out.println("Сортировка A-Z: " + songList);
 		System.out.println("---");
 		
-		HashSet<Song> songSet = new HashSet<Song>();
-		songSet.addAll(songList);
-		System.out.println("Без дубликатов: " + songSet);
+		HashSet<Song> songSet1 = new HashSet<Song>();
+		songSet1.addAll(songList);
+		System.out.println("Без дубликатов hashSet: " + songSet1);
+		System.out.println("---");
+		
+		TreeSet<Song> songSet2 = new TreeSet<Song>();
+		songSet2.addAll(songList);
+		System.out.println("Без дубликатов с сортировкой TreeSet: " + songSet2);
 	}
 	void getSongs(){
 		try{
